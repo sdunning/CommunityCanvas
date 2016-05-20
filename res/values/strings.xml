@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CommunityCanvas</string>
+    <string name="start_new">New</string>
+	<string name="brush">Brush</string>
+	<string name="erase">Erase</string>
+	<string name="save">Save</string>
+	<string name="paint">Paint</string>
+	<string name="sml">Small</string>
+	<string name="med">Medium</string>
+	<string name="lrg">Large</string>
+	<string name="switch_to_chat_view">Switch to chat view</string>
+	<string name="switch_to_paint_view">Switch to paint view</string>
+	<string name="send">Send</string>
+    <string name="title_activity_chat_room">ChatRoom</string>
+
+</resources>

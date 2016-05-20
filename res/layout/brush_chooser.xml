@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/brush_example"
+            android:layout_width="@dimen/medium_brush"
+            android:layout_height="@dimen/medium_brush"
+            android:src="@drawable/brush_size_display"/>
+
+
+    </LinearLayout>
+	
+	<TextView
+		android:id="@+id/sizeView"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:textSize="18sp"/>
+	
+	<SeekBar
+		android:id="@+id/size"
+		android:layout_width="200dp"
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:max="100"/>
+	
+	<Button
+		android:id="@+id/brushConfirm"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:text="Ok"/>
+	
+</LinearLayout>
