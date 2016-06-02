@@ -6,6 +6,8 @@ import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 import android.os.*;
 import android.support.v4.content.res.ResourcesCompat;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
@@ -20,9 +22,10 @@ import android.view.*;
 import android.widget.*;
 import android.widget.SeekBar.*;
 
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends AppCompatActivity implements OnClickListener {
 
 	private DrawingView drawView;
+	private Toolbar toolbar;
 	private ImageButton currPaint, drawBtn, eraseBtn, newBtn, saveBtn;
 	private float smallBrush, mediumBrush, largeBrush;
 
@@ -32,6 +35,9 @@ public class MainActivity extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.main);
+
+        toolbar = (Toolbar)findViewById(R.id.menu_bar);
+        setSupportActionBar(toolbar);
 
 		drawView = (DrawingView)findViewById(R.id.drawing);
 		LinearLayout paintLayout = (LinearLayout)findViewById(R.id.paint_colors);
@@ -54,6 +60,13 @@ public class MainActivity extends Activity implements OnClickListener {
 
 		saveBtn = (ImageButton)findViewById(R.id.save_btn);
 		saveBtn.setOnClickListener(this);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
     }
 
     public int getPixels(int pixels) {

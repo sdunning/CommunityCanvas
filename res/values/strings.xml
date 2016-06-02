@@ -10,9 +10,11 @@
 	<string name="sml">Small</string>
 	<string name="med">Medium</string>
 	<string name="lrg">Large</string>
-	<string name="switch_to_chat_view">Switch to chat view</string>
-	<string name="switch_to_paint_view">Switch to paint view</string>
+	<string name="to_chat">Chat</string>
+	<string name="to_paint">Paint</string>
 	<string name="send">Send</string>
     <string name="title_activity_chat_room">ChatRoom</string>
+	<string name="new_image">New image</string>
+    <string name="save_image">Save image</string>
 
 </resources>

@@ -3,6 +3,9 @@
     package="com.sdunning.CommunityCanvas">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="23"/>
 
     <application
         android:allowBackup="true"

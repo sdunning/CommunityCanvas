@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:compat="http://schemas.android.com/apk/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/new_item"
+        android:title="@string/new_image"
+        android:icon="@drawable/new_pic"
+        compat:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/save_item"
+        android:title="@string/save_image"
+        android:icon="@drawable/save"
+        compat:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/to_chat_item"
+        android:title="@string/to_chat"
+        android:icon="@drawable/ic_action_chat"
+        compat:showAsAction="always"/>
+
+</menu>
